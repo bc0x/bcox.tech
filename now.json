@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "package.json", "use": "@now/next" }
+  ],
+  "name": "bcox.tech",
+  "alias": ["bcox.tech", "brandoncox.tech"],
+  "env": {
+    "NODE_ENV": "production"
+  }
+}
