@@ -24,11 +24,11 @@ class Menu extends React.Component {
             </a>
           </Link>
 
-          <a 
-            role="button" 
-            className="navbar-burger burger" 
-            aria-label="menu" 
-            aria-expanded="false" 
+          <a
+            role="button"
+            className="navbar-burger burger"
+            aria-label="menu"
+            aria-expanded="false"
             data-target="main-nav"
             onClick={this.toggleNav}>
             <span aria-hidden="true"></span>
@@ -37,27 +37,29 @@ class Menu extends React.Component {
           </a>
         </div>
 
-        <div id="main-nav" className={ this.state.active ? 'navbar-menu is-active' : 'navbar-menu'}>
+        <div id="main-nav" className={this.state.active ? 'navbar-menu is-active' : 'navbar-menu'}>
           <div className="navbar-start">
             <Link href="/about">
-              <a className="navbar-item">about</a>
+              <a onClick={this.toggleNav} className="navbar-item">about</a>
             </Link>
             <Link href="/blog">
-              <a className="navbar-item">blog</a>
+              <a onClick={this.toggleNav} className="navbar-item">blog</a>
             </Link>
-            <a 
+            <a
               className="navbar-item"
-              href="https://drive.google.com/file/d/1U4hC75pOoNTB1OG6f7knFa_HzYD5XVvi/view?usp=sharing" 
-              target="_blank" 
+              href="https://drive.google.com/file/d/1U4hC75pOoNTB1OG6f7knFa_HzYD5XVvi/view?usp=sharing"
+              target="_blank"
+              onClick={this.toggleNav}
               rel="noopener noreferrer">
               resume
             </a>
             <Link href="/sandboxes">
-              <a className="navbar-item">sandbox</a>
+              <a onClick={this.toggleNav} className="navbar-item">sandbox</a>
             </Link>
           </div>
         </div>
-      </nav>)
+      </nav>
+    )
   }
 }
 
