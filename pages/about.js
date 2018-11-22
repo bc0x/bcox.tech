@@ -3,7 +3,7 @@ const Index = () => (
     <div className="container is-fluid">
       <h1 className="title">About</h1>
       <h2 className="subtitle">
-        Under Construction
+        Under Construction...
       </h2>
     </div>
   </section>
