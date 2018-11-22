@@ -13,11 +13,12 @@ module.exports = (phase, { defaultConfig }) => {
     }
   }
   const withCSS = require('@zeit/next-css')
-  const withMDX = require("@zeit/next-mdx")({
+  const withMDX = require('@zeit/next-mdx')({
     extension: /\.mdx?$/
   })
+  const withBlogIndex = require('./util/blogIndexPlugin')
 
-  return withCSS(withMDX({
-    pageExtensions: ["js", "md", "mdx"]
-  }))
+  return withCSS(withMDX(withBlogIndex({
+    pageExtensions: ["js", "jsx", "md", "mdx"]
+  })))
 }
