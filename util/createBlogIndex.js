@@ -12,6 +12,7 @@ const glob = promisify(g);
 
 function requireFromStringSync(src, filename) {
   const m = new Module();
+  console.log(src);
   m._compile(src, filename);
   return m.exports;
 }
