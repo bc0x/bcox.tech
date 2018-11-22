@@ -1,7 +1,6 @@
 import Link from 'next/link'
 
 const Blog = () => {
-  console.log(posts);
   return (
     <section className="section">
       <div className="container is-fluid">

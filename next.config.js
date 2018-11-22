@@ -16,9 +16,8 @@ module.exports = (phase, { defaultConfig }) => {
   const withMDX = require('@zeit/next-mdx')({
     extension: /\.mdx?$/
   })
-  const withBlogIndex = require('./util/blogIndexPlugin')
 
-  return withCSS(withMDX(withBlogIndex({
+  return withCSS(withMDX({
     pageExtensions: ["js", "jsx", "md", "mdx"]
-  })))
+  }))
 }
