@@ -2,17 +2,18 @@ import Link from 'next/link'
 
 const postFileNames =
   preval`
-    module.exports = require("fs").readdirSync("./posts")
-  ` || []
+module.exports = require("fs").readdirSync("./posts")
+` || []
 
 const posts = postFileNames.map(name => {
-  console.log(name)
   const {
+    default: Component,
     meta: { title }
   } = require("../posts/" + name)
 
   return {
-    title
+    Component,
+    title,
   }
 })
 
@@ -25,7 +26,7 @@ const Blog = () => (
       </h2>
       {posts.map(post => (
         <div key={post.title}>
-          <Link as={`/blog/${post.title}`} href={`/blogpost?title=${post.title}`}>
+          <Link as={`/blog/${post.title}`} href={`/blogpost/?title=${post.title}`}>
             <a>{post.title}</a>
           </Link>
         </div>
