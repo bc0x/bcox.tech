@@ -1,4 +1,4 @@
-const Index = () => (
+const About = () => (
   <section className="section">
     <div className="container is-fluid">
       <h1 className="title">About</h1>
@@ -9,4 +9,4 @@ const Index = () => (
   </section>
 )
 
-export default Index
+export default About

@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import 'bulma/css/bulma.css'
+//import 'bulma/css/bulma.css'
 
 class Menu extends React.Component {
   constructor(props) {
@@ -41,6 +41,9 @@ class Menu extends React.Component {
           <div className="navbar-start">
             <Link href="/about">
               <a className="navbar-item">about</a>
+            </Link>
+            <Link href="/blog">
+              <a className="navbar-item">blog</a>
             </Link>
             <a 
               className="navbar-item"

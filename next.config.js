@@ -13,5 +13,11 @@ module.exports = (phase, { defaultConfig }) => {
     }
   }
   const withCSS = require('@zeit/next-css')
-  return withCSS({})
+  const withMDX = require("@zeit/next-mdx")({
+    extension: /\.mdx?$/
+  })
+
+  return withCSS(withMDX({
+    pageExtensions: ["js", "md", "mdx"]
+  }))
 }

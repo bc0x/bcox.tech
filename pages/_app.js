@@ -1,5 +1,6 @@
 import App, { Container } from 'next/app';
 import Layout from '../layouts/Layout'
+import 'bulma/css/bulma.css'
 
 class MyApp extends App {
   render() {

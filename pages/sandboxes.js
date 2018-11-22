@@ -1,5 +1,4 @@
 const Sandbox = () => (
-
   <section className="section">
     <div className="container is-fluid">
       <h1 className="title">Sandboxes</h1>
