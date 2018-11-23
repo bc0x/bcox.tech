@@ -4,7 +4,6 @@
     { "src": "package.json", "use": "@now/next", "config": { "maxLambdaSize": "10mb" } },
     { "src": "./static/**", "use": "@now/static"}
   ],
-  "routes": [{ "src": "^/blog/(?<id>[^/]*)", "dest": "/blogpost?id=$id" }],
   "name": "bcox.tech",
   "alias": ["bcox.tech", "brandoncox.tech"],
   "env": {

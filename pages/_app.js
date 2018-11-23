@@ -1,6 +1,12 @@
 import App, { Container } from 'next/app';
 import Layout from '../layouts/Layout'
-import 'bulma/css/bulma.css'
+import './../styles.scss'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faGithub, faStackOverflow, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
+import { faHandPeace, faHeart } from '@fortawesome/free-regular-svg-icons'
+import '@fortawesome/fontawesome-svg-core/styles.css'
+
+library.add( faGithub, faHandPeace, faHeart, faStackOverflow, faLinkedinIn)
 
 class MyApp extends App {
   render() {

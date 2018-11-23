@@ -1,0 +1,11 @@
+@charset "utf8";
+
+.am10 {
+  margin: 0 10px 0 10px
+}
+.am5 {
+  margin: 0 5px 0 5px
+}
+
+@import "./node_modules/bulma/bulma.sass";
+@import "./node_modules/bulma-timeline/src/sass/index.sass"

@@ -1,5 +1,6 @@
 import Menu from '../components/Menu'
 import Head from 'next/head'
+import Footer from '../components/Footer'
 
 const Layout = (props) => (
   <>
@@ -10,6 +11,7 @@ const Layout = (props) => (
     </Head>
     <Menu />
     {props.children}
+    <Footer/>
   </>
 )
 

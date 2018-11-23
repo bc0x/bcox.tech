@@ -12,12 +12,13 @@ module.exports = (phase, { defaultConfig }) => {
       /* production only config */
     }
   }
-  const withCSS = require('@zeit/next-css')
+  const withCss = require('@zeit/next-css')
+  const withSass = require('@zeit/next-sass')
   const withMDX = require('@zeit/next-mdx')({
     extension: /\.mdx?$/
   })
-
-  return withCSS(withMDX({
-    pageExtensions: ["js", "jsx", "md", "mdx"]
-  }))
+  return withCss(withSass(withMDX({
+    pageExtensions: ["js", "jsx", "md", "mdx"],
+    cssModules: false
+  })))
 }
