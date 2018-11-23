@@ -1,7 +1,7 @@
 {
   "version": 2,
   "builds": [
-    { "src": "package.json", "use": "@now/next", "config": { "maxLambdaSize": "10mb" } },
+    { "src": "package.json", "use": "@now/next", "config": { "maxLambdaSize": "20mb" } },
     { "src": "./static/**", "use": "@now/static"}
   ],
   "name": "bcox.tech",

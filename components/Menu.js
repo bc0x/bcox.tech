@@ -15,7 +15,6 @@ class Menu extends React.Component {
 
   render() {
     return (
-
       <section className="hero is-primary is-medium">
         <div className="hero-head">
 

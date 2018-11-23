@@ -1,7 +1,6 @@
 import Preview from './../../components/blog/Preview'
 
 function importAll(r) {
-  console.log(r.keys());
   return r.keys().map(r);
 }
 
