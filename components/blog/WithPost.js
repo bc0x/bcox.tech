@@ -24,7 +24,6 @@ const Author = meta => (
 );
 
 export default meta => props => {
-  console.log(meta);
   return (
     <MDXProvider components={PostComponents}>
       <section className="section has-text-centered">
