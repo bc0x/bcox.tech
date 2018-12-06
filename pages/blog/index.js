@@ -1,11 +1,11 @@
-import Preview from './../../components/blog/Preview'
+import Preview from "./../../components/blog/Preview";
 
 function importAll(r) {
   return r.keys().map(r);
 }
 
 const previewItems = importAll(
-  require.context('./../../blog', false, /\-preview\.mdx$/)
+  require.context("./../../blog", false, /\-preview\.mdx$/)
 );
 
 function dateSortDesc(a, b) {
@@ -28,17 +28,11 @@ const items = previewItems
       >
         <Component />
       </Preview>
-    )
+    );
   });
 
-
 const Blog = () => {
-  return (
-    <section className="section">
-      {items}
-    </section>
+  return <section className="section">{items}</section>;
+};
 
-  )
-}
-
-export default Blog
+export default Blog;

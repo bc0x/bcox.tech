@@ -1,11 +1,17 @@
 @charset "utf8";
 
 .am10 {
-  margin: 0 10px 0 10px
+  margin: 0 10px 0 10px;
 }
 .am5 {
-  margin: 0 5px 0 5px
+  margin: 0 5px 0 5px;
+}
+.m-t-10 {
+  margin-top: 20px;
 }
 
+$primary: #46adcb;
+$family-sans-serif: "Fira Mono", monospace;
+
 @import "./node_modules/bulma/bulma.sass";
-@import "./node_modules/bulma-timeline/src/sass/index.sass"
+@import "./node_modules/bulma-timeline/src/sass/index.sass";
