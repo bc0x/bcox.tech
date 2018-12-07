@@ -7,8 +7,10 @@ import {
   faStackOverflow,
   faLinkedinIn,
   faCreativeCommons,
+  faTwitterSquare
 } from "@fortawesome/free-brands-svg-icons";
 import { faHandPeace, faHeart } from "@fortawesome/free-regular-svg-icons";
+import { faAngleDoubleDown } from "@fortawesome/free-solid-svg-icons";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 
 library.add(
@@ -17,7 +19,9 @@ library.add(
   faHeart,
   faStackOverflow,
   faLinkedinIn,
-  faCreativeCommons
+  faCreativeCommons,
+  faTwitterSquare,
+  faAngleDoubleDown
 );
 
 class MyApp extends App {

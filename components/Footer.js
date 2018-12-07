@@ -1,9 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const getFooterText = () => {
-  return true;
-};
-
 const Footer = props => (
   <footer className="footer">
     <div className="container content has-text-centered">
@@ -53,6 +49,18 @@ const Footer = props => (
         >
           <FontAwesomeIcon
             icon={["fab", "linkedin-in"]}
+            color="#46adcb"
+            size="2x"
+          />
+        </a>
+        <a
+          className="am10"
+          href="https://www.twitter.com/bcox_tech"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FontAwesomeIcon
+            icon={["fab", "twitter-square"]}
             color="#46adcb"
             size="2x"
           />
