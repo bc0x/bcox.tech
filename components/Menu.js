@@ -14,8 +14,13 @@ class Menu extends React.Component {
   };
 
   render() {
+    const { route } = this.props;
+    const heroClass =
+      route === "/"
+        ? "hero is-primary is-medium has-text-centered"
+        : "hero is-primary is-small has-text-centered";
     return (
-      <section className="hero is-primary is-medium has-text-centered">
+      <section className={heroClass}>
         <div className="hero-head">
           <nav
             className="navbar"
@@ -79,7 +84,7 @@ class Menu extends React.Component {
                   Engineer, Traveler, &amp; Techie
                 </h1>
                 <h2 className="subtitle is-size-4-desktop">
-                  Writing code and loving life!
+                  Writing code and stuff.
                 </h2>
               </div>
             </div>

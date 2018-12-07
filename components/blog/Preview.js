@@ -19,7 +19,7 @@ const Preview = props => {
       </div>
       <div className="container">
         <Link href={link}>
-          <a className="button is-primary is-outlined m-t-10">Read More</a>
+          <a className="button is-primary is-outlined m-t-20">Read More</a>
         </Link>
       </div>
     </div>

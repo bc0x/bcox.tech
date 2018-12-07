@@ -26,7 +26,7 @@ const items = previewItems
         prefetch={index < 3}
         {...meta}
       >
-        <Component />
+        <Component comp />
       </Preview>
     );
   });

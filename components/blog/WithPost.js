@@ -5,21 +5,24 @@ import formatDate from "date-fns/format";
 import { PostComponents } from "./PostComponents";
 
 const Author = meta => (
-  <div className="author">
-    <img src={meta.avatar} alt={meta.name} />
-    <span className="name f5">
-      <span className="real-name">{meta.name}</span>
+  <div className="container has-text-centered">
+    <div className="container">
+      <div className="columns is-centered">
+        <div className="column">
+          <span className="image avatar is-24x24 m-r-5">
+            <img className="is-rounded" src={meta.avatar} />
+          </span>
+          <span className="">{meta.name}</span>
+        </div>
+      </div>
+    </div>
+    <div className="container">
       <Link href={`https://twitter.com/${meta.twitter}`}>
-        <a className="twitter" target="_blank">
-          @{meta.twitter}
+        <a target="_blank">
+          <span className="is-size-7"> @{meta.twitter}</span>
         </a>
       </Link>
-      <span className="twitter-mobile">
-        <Link href={`https://twitter.com/${meta.twitter}`}>
-          <a target="_blank">@{meta.twitter}</a>
-        </Link>
-      </span>
-    </span>
+    </div>
   </div>
 );
 
@@ -38,7 +41,10 @@ export default meta => props => {
                 })}
                 )
               </h6>
-              <content>{props.children}</content>
+              <Author {...meta.author} />
+              <div className="m-t-40">
+                <content>{props.children}</content>
+              </div>
             </div>
           </div>
         </div>

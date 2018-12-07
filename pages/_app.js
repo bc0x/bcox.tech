@@ -22,10 +22,10 @@ library.add(
 
 class MyApp extends App {
   render() {
-    const { Component, pageProps } = this.props;
+    const { Component, pageProps, router } = this.props;
     return (
       <Container>
-        <Layout>
+        <Layout route={router.route}>
           <Component {...pageProps} />
         </Layout>
       </Container>

@@ -2,7 +2,7 @@ const Index = () => (
   <section className="section has-text-centered">
     <div className="container">
       <div className="columns is-centered">
-        <div className="column">
+        <div className="column is-three-quarters">
           <h3 className="title is-spaced is-size-3-desktop is-size-4-mobile">
             Hey, I'm Brandon. I'm glad you made your way here!
           </h3>
