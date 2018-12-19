@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="113px" height="27px" viewBox="0 0 113 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>[ bcox ]</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <text id="text-1" font-family="PTMono-Regular, PT Mono" font-size="24" font-weight="normal">
+            <tspan x="-1" y="17">[ bcox ]</tspan>
+        </text>
+        <filter x="-3.4%" y="-7.4%" width="106.9%" height="129.6%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="[-bcox-]" fill="#FFFFFF">
+            <use fill-opacity="1" filter="url(#filter-2)" xlink:href="#text-1"></use>
+            <use fill-rule="evenodd" xlink:href="#text-1"></use>
+            <use fill-opacity="1" xlink:href="#text-1"></use>
+        </g>
+    </g>
+</svg>
