@@ -38,9 +38,15 @@ const Timeline = props => {
               <header key="start" className="timeline-header">
                 <span className="tag is-medium is-primary">Start</span>
               </header>
-              {data.map((item, idx) => (
-                <TimelineItem key={idx} item={item} idx={idx} />
-              ))}
+              {data
+                .sort((a, b) => {
+                  if (a.date < b.date) return -1;
+                  if (a.date > b.date) return 1;
+                  return 0;
+                })
+                .map((item, idx) => (
+                  <TimelineItem key={idx} item={item} idx={idx} />
+                ))}
               <header key="end" className="timeline-header">
                 <span className="tag is-medium is-primary">End</span>
               </header>
