@@ -1,6 +1,7 @@
-import Menu from "../components/Menu";
-import Head from "next/head";
-import Footer from "../components/Footer";
+import React from 'react';
+import Menu from '../components/Menu';
+import Head from 'next/head';
+import Footer from '../components/Footer';
 
 const Layout = props => (
   <>

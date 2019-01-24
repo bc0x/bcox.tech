@@ -1,11 +1,13 @@
+import React from 'react';
+
 export const getClass = (type, color) => {
-  if (type === "item") {
+  if (type === 'item') {
     return `timeline-item is-${color}`;
   }
-  if (type === "marker") {
+  if (type === 'marker') {
     return `timeline-marker is-${color}`;
   }
-  if (type === "heading") {
+  if (type === 'heading') {
     return `heading has-text-${color}`;
   }
 };

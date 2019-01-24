@@ -10,15 +10,20 @@ module.exports = (phase, { defaultConfig }) => {
   if (phase === PHASE_PRODUCTION_SERVER) {
     return {
       /* production only config */
-    }
+    };
   }
-  const withCss = require('@zeit/next-css')
-  const withSass = require('@zeit/next-sass')
+  const withPlugins = require('next-compose-plugins');
+  const withCss = require('@zeit/next-css');
+  const withSass = require('@zeit/next-sass');
   const withMDX = require('@zeit/next-mdx')({
     extension: /\.mdx?$/
-  })
-  return withCss(withSass(withMDX({
-    pageExtensions: ["js", "jsx", "md", "mdx"],
-    cssModules: false
-  })))
-}
+  });
+  return withCss(
+    withSass(
+      withMDX({
+        pageExtensions: ['js', 'jsx', 'md', 'mdx'],
+        cssModules: false
+      })
+    )
+  );
+};

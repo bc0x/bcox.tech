@@ -1,5 +1,10 @@
+import React from 'react';
+
 const H1 = ({ children }) => {
-  return <h3 className="title is-4 is-centered">{children}</h3>;
+  console.log('here');
+  return (
+    <h3 className="title is-4 is-centered has-text-success">{children}</h3>
+  );
 };
 const LI = ({ children }) => {
   return null;
@@ -23,5 +28,5 @@ export const PostComponents = {
   ul: UL,
   code: Code,
   p: P,
-  hr: HR,
+  hr: HR
 };

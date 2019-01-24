@@ -1,6 +1,8 @@
-import formatDate from "date-fns/format";
-import distanceInWordsToNow from "date-fns/distance_in_words_to_now";
-import Link from "next/link";
+import formatDate from 'date-fns/format';
+import distanceInWordsToNow from 'date-fns/distance_in_words_to_now';
+import Link from 'next/link';
+import React from 'react';
+import PropTypes from 'prop-types';
 
 const Preview = props => {
   const { detail, link, title, date, prefetch, children } = props;
@@ -8,9 +10,9 @@ const Preview = props => {
     <div className="container box has-text-centered">
       <h4 className="title is-4 is-centered">{title}</h4>
       <h6 className="subtitle is-6">
-        {formatDate(date, "dddd, MMMM Do YYYY")} (
+        {formatDate(date, 'dddd, MMMM Do YYYY')} (
         {distanceInWordsToNow(date, {
-          addSuffix: true,
+          addSuffix: true
         })}
         )
       </h6>
@@ -24,6 +26,15 @@ const Preview = props => {
       </div>
     </div>
   );
+};
+
+Preview.propTypes = {
+  detail: PropTypes.bool,
+  link: PropTypes.string,
+  title: PropTypes.string,
+  date: PropTypes.string,
+  prefetch: PropTypes.bool,
+  children: PropTypes.object
 };
 
 export default Preview;

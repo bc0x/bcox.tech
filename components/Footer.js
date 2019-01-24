@@ -1,24 +1,25 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React from 'react';
 
 const Footer = props => (
-  <footer className="footer">
+  <footer className="footer" color="white">
     <div className="container content has-text-centered">
       <p>
         <FontAwesomeIcon
-          icon={["far", "hand-peace"]}
+          icon={['far', 'hand-peace']}
           color="#46adcb"
           size="2x"
         />
         <span className="am10">
           <span>Built by me&nbsp;</span>
           <FontAwesomeIcon
-            icon={["fab", "creative-commons"]}
+            icon={['fab', 'creative-commons']}
             color="#46adcb"
             size="xs"
           />
           <span>&nbsp;{new Date().getFullYear()}</span>
         </span>
-        <FontAwesomeIcon icon={["far", "heart"]} color="#46adcb" size="2x" />
+        <FontAwesomeIcon icon={['far', 'heart']} color="#46adcb" size="2x" />
       </p>
       <p>
         <a
@@ -27,7 +28,7 @@ const Footer = props => (
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FontAwesomeIcon icon={["fab", "github"]} color="#46adcb" size="2x" />
+          <FontAwesomeIcon icon={['fab', 'github']} color="#46adcb" size="2x" />
         </a>
         <a
           className="am10"
@@ -36,7 +37,7 @@ const Footer = props => (
           rel="noopener noreferrer"
         >
           <FontAwesomeIcon
-            icon={["fab", "stack-overflow"]}
+            icon={['fab', 'stack-overflow']}
             color="#46adcb"
             size="2x"
           />
@@ -48,7 +49,7 @@ const Footer = props => (
           rel="noopener noreferrer"
         >
           <FontAwesomeIcon
-            icon={["fab", "linkedin-in"]}
+            icon={['fab', 'linkedin-in']}
             color="#46adcb"
             size="2x"
           />
@@ -60,7 +61,7 @@ const Footer = props => (
           rel="noopener noreferrer"
         >
           <FontAwesomeIcon
-            icon={["fab", "twitter-square"]}
+            icon={['fab', 'twitter-square']}
             color="#46adcb"
             size="2x"
           />

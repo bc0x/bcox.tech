@@ -1,13 +1,14 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import data from "./data";
-import { getClass, addHeader } from "./../../util";
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import data from './data';
+import { getClass, addHeader } from './../../util';
 
 const TimelineItem = props => {
   const { item, idx } = props;
   return (
     <>
-      <div key={item.id} className={getClass("item", item.color)}>
-        <div className={getClass("marker", item.marker)} />
+      <div key={item.id} className={getClass('item', item.color)}>
+        <div className={getClass('marker', item.marker)} />
         <div className="timeline-content">
           <p className="heading">{item.heading}</p>
           <p className={item.textColor}>{item.content}</p>
@@ -25,11 +26,11 @@ const Timeline = props => {
         <div className="columns is-centered">
           <div className="column is-three-quarters">
             <h4 className="title is-spaced is-size-4-desktop is-size-5-mobile">
-              What's been going on
+              What&apos;s been going on
             </h4>
             <h5 className="subtitle is-size-5-desktop">
               <FontAwesomeIcon
-                icon={["fas", "angle-double-down"]}
+                icon={['fas', 'angle-double-down']}
                 color="#46adcb"
                 size="2x"
               />

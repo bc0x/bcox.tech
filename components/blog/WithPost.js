@@ -1,8 +1,9 @@
-import Link from "next/link";
-import { MDXProvider } from "@mdx-js/tag";
-import distanceInWordsToNow from "date-fns/distance_in_words_to_now";
-import formatDate from "date-fns/format";
-import { PostComponents } from "./PostComponents";
+import React from 'react';
+import Link from 'next/link';
+import { MDXProvider } from '@mdx-js/tag';
+import distanceInWordsToNow from 'date-fns/distance_in_words_to_now';
+import formatDate from 'date-fns/format';
+import { PostComponents } from './PostComponents';
 
 const Author = meta => (
   <div className="container has-text-centered">
@@ -26,29 +27,31 @@ const Author = meta => (
   </div>
 );
 
-export default meta => props => {
-  return (
-    <MDXProvider components={PostComponents}>
-      <section className="section has-text-centered">
-        <div className="container">
-          <div className="columns is-centered">
-            <div className="column">
-              <h4 className="title is-4 is-centered">{meta.title}</h4>
-              <h6 className="subtitle is-6">
-                {formatDate(meta.date, "dddd, MMMM Do YYYY")} (
-                {distanceInWordsToNow(meta.date, {
-                  addSuffix: true,
-                })}
-                )
-              </h6>
-              <Author {...meta.author} />
-              <div className="m-t-40">
-                <content>{props.children}</content>
+export default meta => {
+  return function Post(props) {
+    return (
+      <MDXProvider components={PostComponents}>
+        <section className="section has-text-centered">
+          <div className="container">
+            <div className="columns is-centered">
+              <div className="column">
+                <h4 className="title is-4 is-centered">{meta.title}</h4>
+                <h6 className="subtitle is-6">
+                  {formatDate(meta.date, 'dddd, MMMM Do YYYY')} (
+                  {distanceInWordsToNow(meta.date, {
+                    addSuffix: true
+                  })}
+                  )
+                </h6>
+                <Author {...meta.author} />
+                <div className="m-t-40">
+                  <content>{props.children}</content>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-    </MDXProvider>
-  );
+        </section>
+      </MDXProvider>
+    );
+  };
 };

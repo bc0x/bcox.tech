@@ -1,17 +1,19 @@
-import App, { Container } from "next/app";
-import Layout from "../layouts/Layout";
-import "./../styles.scss";
-import { library } from "@fortawesome/fontawesome-svg-core";
+import React from 'react';
+import App, { Container } from 'next/app';
+import Layout from '../layouts/Layout';
+import './../styles.scss';
+import { library } from '@fortawesome/fontawesome-svg-core';
 import {
   faGithub,
   faStackOverflow,
   faLinkedinIn,
   faCreativeCommons,
-  faTwitterSquare
-} from "@fortawesome/free-brands-svg-icons";
-import { faHandPeace, faHeart } from "@fortawesome/free-regular-svg-icons";
-import { faAngleDoubleDown } from "@fortawesome/free-solid-svg-icons";
-import "@fortawesome/fontawesome-svg-core/styles.css";
+  faTwitterSquare,
+  faTwitter
+} from '@fortawesome/free-brands-svg-icons';
+import { faHandPeace, faHeart } from '@fortawesome/free-regular-svg-icons';
+import { faAngleDoubleDown } from '@fortawesome/free-solid-svg-icons';
+import '@fortawesome/fontawesome-svg-core/styles.css';
 
 library.add(
   faGithub,
@@ -21,7 +23,8 @@ library.add(
   faLinkedinIn,
   faCreativeCommons,
   faTwitterSquare,
-  faAngleDoubleDown
+  faAngleDoubleDown,
+  faTwitter
 );
 
 class MyApp extends App {

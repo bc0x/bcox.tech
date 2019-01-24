@@ -1,11 +1,12 @@
-import Preview from "./../../components/blog/Preview";
+import Preview from './../../components/blog/Preview';
+import React from 'react';
 
 function importAll(r) {
   return r.keys().map(r);
 }
 
 const previewItems = importAll(
-  require.context("./../../blog", false, /\-preview\.mdx$/)
+  require.context('./../../blog', false, /\-preview\.mdx$/)
 );
 
 function dateSortDesc(a, b) {
